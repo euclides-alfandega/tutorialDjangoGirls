@@ -1,0 +1,24 @@
+<div>
+
+
+    <h1>
+        <a href="/">DJANDO Girls Tutorial</a>
+    </h1>
+</div>
+
+{% for post in posts %}
+
+    <div>
+        <p>
+            author: {{ post.author }}
+        </p>
+        <p>
+            published: {{ post.publishe_date }}
+        </p>
+
+        <h2><a href="/">{{ post.title }}</a></h2>
+
+        <p>{{ post.text }}</p>
+
+    </div>
+{% endfor %}
